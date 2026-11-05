@@ -1,7 +1,7 @@
 const BASE = "/fanki.github.io/";
 const PREFIX = "frontier-shell-" + BASE + "-";
-const CACHE = PREFIX + "863989f49f51";
-const ASSETS = ["/fanki.github.io/","/fanki.github.io/index.html","/fanki.github.io/manifest.webmanifest","/fanki.github.io/icon.svg","/fanki.github.io/deck-credits.html","/fanki.github.io/icon-192.png","/fanki.github.io/icon-512.png","/fanki.github.io/assets/index-Dg1EiO5R.js","/fanki.github.io/assets/library-CH7FzTgY.js","/fanki.github.io/assets/memory-57VzzVVK.js","/fanki.github.io/assets/react-KPuNr9iS.js","/fanki.github.io/assets/rolldown-runtime-XKyaHtl9.js","/fanki.github.io/assets/storage-BGGz-qPp.js","/fanki.github.io/assets/validation-DBLlTRm-.js","/fanki.github.io/assets/index-CUIac2eS.css"];
+const CACHE = PREFIX + "926aff016e7d";
+const ASSETS = ["/fanki.github.io/","/fanki.github.io/index.html","/fanki.github.io/manifest.webmanifest","/fanki.github.io/icon.svg","/fanki.github.io/deck-credits.html","/fanki.github.io/import-credits.html","/fanki.github.io/icon-192.png","/fanki.github.io/icon-512.png","/fanki.github.io/assets/index-c9f3BQq4.js","/fanki.github.io/assets/AnkiImport-DEF9SlMq.js","/fanki.github.io/assets/library-CH7FzTgY.js","/fanki.github.io/assets/memory-57VzzVVK.js","/fanki.github.io/assets/react-KPuNr9iS.js","/fanki.github.io/assets/rolldown-runtime-XKyaHtl9.js","/fanki.github.io/assets/sql-wasm-browser-DzocAKyf.js","/fanki.github.io/assets/storage-BGGz-qPp.js","/fanki.github.io/assets/validation-DBLlTRm-.js","/fanki.github.io/assets/index-CHPkWns4.css","/fanki.github.io/assets/sql-wasm-B-9ndiyM.wasm"];
 self.addEventListener("install", (event) => {
   event.waitUntil(caches.open(CACHE).then((cache) => cache.addAll(ASSETS)));
 });
