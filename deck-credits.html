@@ -1,0 +1,27 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>FrontierAnki vocabulary credits</title><style>body{background:#131314;color:#e3e3e3;font:16px/1.65 system-ui;margin:24px;overflow-wrap:anywhere}pre{white-space:pre-wrap;font:inherit}a{color:#a8c7fa}</style><main><h1>Vocabulary sources and licenses</h1><p><a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode.en">License legal code</a></p><pre># Bundled vocabulary sources
+
+Approved by the owner on 5 November 2026. Oxford 5000 covers B2/C1, not C2. Its public redistribution terms were not established; no Oxford dataset is bundled. Optional AnkiWeb packages are assigned to another agent and are not part of this change.
+
+The default is a **195-card original Russian-gloss selection from NAWL 1.2**, selected for useful general/academic vocabulary around C1. It omits lower-level CEFR-J core lemmas, bound prefixes and many specialist terms. It is a selection, not a claim of an official C1 certification. The original 80-card editorial starter remains an explicit legacy import; it is no longer seeded on new installations.
+
+Available offline, disabled initially:
+
+| Selection | Bundled senses | Source rows |
+| --- | ---: | ---: |
+| NAWL wider advanced selection | 667 | 959 |
+| CEFR-J B2 | 2,289 | 2,778 |
+| Octanove C1 | 814 | 1,111 |
+| Octanove C2 | 771 | 1,025 |
+
+There are **4,191 distinct canonical word/gloss cards** across the selections. Counts overlap: the same sense in several lists shares one card and two original free-recall prompts. CEFR levels are source lemma/profile annotations, not certified individual sense levels. All bands omit lower-level core lemmas; lists also omit entries without a usable POS-compatible Russian dictionary gloss. Exact omissions and counts are in `deck-coverage.json`. No blank or fabricated dictionary gloss is used to pad a count.
+
+- **NAWL 1.2** — Charles Browne, Brent Culligan and Joseph Phillips, [official New Academic Word List](https://www.newgeneralservicelist.com/new-academic-word-list), [definitions CSV](https://www.newgeneralservicelist.com/s/NAWL_12_with_en_definitions.csv), [teaching lemmas](https://www.newgeneralservicelist.com/s/NAWL_12_lemmatized_for_teaching.csv). **CC BY-SA 4.0**. The authors describe 957 words beyond the NGSL core. The current definitions CSV has 959 distinct rows; we report that discrepancy rather than inventing 957 cards. Source English definitions are retained. The cited 92% coverage refers to NGSL plus NAWL in the authors’ 288-million-word academic corpus, not NAWL alone. No promise of equal coverage of conversational American English.
+- **CEFR-J Vocabulary Profile v1.5** — compiled by Yukio Tono, Tono Laboratory, Tokyo University of Foreign Studies. [Open Language Profiles distribution and terms](https://github.com/openlanguageprofiles/olp-en-cefrj). Terms: “can be used for research and commercial purposes with no charge, provided that you cite the dataset properly. The copyright belongs to Tono Laboratory at TUFS (Tokyo University of Foreign Studies).” Upstream disclaimer of accuracy/liability remains applicable.
+- **Octanove Vocabulary Profile C1/C2 v1.0** — Octanove Labs, same [distribution](https://github.com/openlanguageprofiles/olp-en-cefrj), **CC BY-SA 4.0**.
+- **English–Russian WikDict / Wiktionary** — [download terms](https://www.wikdict.com/page/download), [SQL dictionary](https://download.wikdict.com/dictionaries/sqlite/2/en-ru.sqlite3) (23 June 2026 edition), **CC BY-SA 4.0**, including Wiktionary contributor attribution. Russian dictionary glosses are selected by POS and English sense-definition overlap; dictionary coverage and source annotation errors remain possible. These are dictionary imports, not independently certified translations.
+- Original recommended Russian glosses are in `scripts/recommended-glosses.tsv`; a small additional fallback/correction map is in `scripts/build-library.py`. These translations are original development content; they are not falsely attributed to WikDict or claimed to be a live provider result. The bundled derivative dataset and original glosses are offered under **CC BY-SA 4.0**.
+
+[CC BY-SA 4.0 license](https://creativecommons.org/licenses/by-sa/4.0/) · [legal code](https://creativecommons.org/licenses/by-sa/4.0/legalcode.en). All modifications are identified here: filtering, canonical/sense deduplication, selected US spelling normalization, removal of Russian stress accents, dictionary sense selection and original glosses. No source endorses FrontierAnki. Dataset licensing does not relicense application code.
+
+Rebuild: download the four CSVs and WikDict SQLite into a private scratch directory, then run `python scripts/build-library.py /path/to/scratch`. Source URL paths are recorded above and in `scripts/build-library.py`. The generated JSON and attribution are committed; the 20-MB dictionary and user-supplied Anki packages are not published. Runtime study does not access source websites or need API credentials. `intakeRank` gives personal additions priority, then uses WikDict importance as a deterministic library ordering heuristic; it is not a NAWL frequency rank or a research-validated optimal order.
+</pre></main></html>

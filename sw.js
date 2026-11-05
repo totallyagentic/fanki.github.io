@@ -1,7 +1,7 @@
 const BASE = "/fanki.github.io/";
 const PREFIX = "frontier-shell-" + BASE + "-";
-const CACHE = PREFIX + "050dbd222137";
-const ASSETS = ["/fanki.github.io/","/fanki.github.io/index.html","/fanki.github.io/manifest.webmanifest","/fanki.github.io/icon.svg","/fanki.github.io/icon-192.png","/fanki.github.io/icon-512.png","/fanki.github.io/assets/index-_TFyGEXu.js","/fanki.github.io/assets/memory-CKnHb7ui.js","/fanki.github.io/assets/react-KPuNr9iS.js","/fanki.github.io/assets/rolldown-runtime-XKyaHtl9.js","/fanki.github.io/assets/storage-BGGz-qPp.js","/fanki.github.io/assets/validation-CvDrsmHN.js","/fanki.github.io/assets/index-C4gF6uH5.css"];
+const CACHE = PREFIX + "32b2b0c6d9e7";
+const ASSETS = ["/fanki.github.io/","/fanki.github.io/index.html","/fanki.github.io/manifest.webmanifest","/fanki.github.io/icon.svg","/fanki.github.io/deck-credits.html","/fanki.github.io/icon-192.png","/fanki.github.io/icon-512.png","/fanki.github.io/assets/index-BF4qciQb.js","/fanki.github.io/assets/library-CH7FzTgY.js","/fanki.github.io/assets/memory-57VzzVVK.js","/fanki.github.io/assets/react-KPuNr9iS.js","/fanki.github.io/assets/rolldown-runtime-XKyaHtl9.js","/fanki.github.io/assets/storage-BGGz-qPp.js","/fanki.github.io/assets/validation-CvDrsmHN.js","/fanki.github.io/assets/index-CT0gIomn.css"];
 self.addEventListener("install", (event) => {
   event.waitUntil(caches.open(CACHE).then((cache) => cache.addAll(ASSETS)));
 });
