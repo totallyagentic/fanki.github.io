@@ -1,7 +1,7 @@
 const BASE = "/fanki.github.io/";
 const PREFIX = "frontier-shell-" + BASE + "-";
-const CACHE = PREFIX + "d150bb846d83";
-const ASSETS = ["/fanki.github.io/","/fanki.github.io/index.html","/fanki.github.io/manifest.webmanifest","/fanki.github.io/icon.svg","/fanki.github.io/deck-credits.html","/fanki.github.io/import-credits.html","/fanki.github.io/icon-192.png","/fanki.github.io/icon-512.png","/fanki.github.io/assets/index-Cjzbq9FF.js","/fanki.github.io/assets/AnkiImport-C9rz9xvi.js","/fanki.github.io/assets/library-CH7FzTgY.js","/fanki.github.io/assets/memory-57VzzVVK.js","/fanki.github.io/assets/react-KPuNr9iS.js","/fanki.github.io/assets/rolldown-runtime-XKyaHtl9.js","/fanki.github.io/assets/sql-wasm-browser-DzocAKyf.js","/fanki.github.io/assets/storage-BGGz-qPp.js","/fanki.github.io/assets/validation-DBLlTRm-.js","/fanki.github.io/assets/index-C3T8UfY5.css","/fanki.github.io/assets/sql-wasm-B-9ndiyM.wasm"];
+const CACHE = PREFIX + "9872a15702b1";
+const ASSETS = ["/fanki.github.io/","/fanki.github.io/index.html","/fanki.github.io/manifest.webmanifest","/fanki.github.io/icon.svg","/fanki.github.io/deck-credits.html","/fanki.github.io/import-credits.html","/fanki.github.io/icon-192.png","/fanki.github.io/icon-512.png","/fanki.github.io/assets/index-C05__jSk.js","/fanki.github.io/assets/AnkiImport-CjQNYpxV.js","/fanki.github.io/assets/library-CH7FzTgY.js","/fanki.github.io/assets/memory-57VzzVVK.js","/fanki.github.io/assets/react-C1iE8mnY.js","/fanki.github.io/assets/rolldown-runtime-XKyaHtl9.js","/fanki.github.io/assets/sql-wasm-browser-DzocAKyf.js","/fanki.github.io/assets/storage-BGGz-qPp.js","/fanki.github.io/assets/validation-DBLlTRm-.js","/fanki.github.io/assets/index-CyIb77uZ.css","/fanki.github.io/assets/sql-wasm-B-9ndiyM.wasm"];
 self.addEventListener("install", (event) => {
   event.waitUntil(caches.open(CACHE).then((cache) => cache.addAll(ASSETS)));
 });
